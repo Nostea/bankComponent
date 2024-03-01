@@ -14,7 +14,7 @@ const Bank = () => {
         </div>
         <div className="balance">
           <span>Your Balance</span>
-          <span className="currentBalance">{cash}</span>
+          <span className="currentBalance">{cash}€</span>
         </div>
       </div>
 
@@ -24,8 +24,9 @@ const Bank = () => {
             type="number"
             name="inputGeld"
             id="inputGeld"
+            step="0.01"
             onChange={(event) => setWithdrawAmount(Number(event.target.value))}
-            placeholder="Betrag in Euro"
+            placeholder="Betrag"
             value={withdrawAmount}
           />
           <span>€</span>

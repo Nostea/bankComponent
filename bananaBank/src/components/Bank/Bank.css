@@ -1,25 +1,30 @@
 .creditCard {
   color: #ffffff;
-  border-radius: 15px;
-  font-family: "Ruluko", sans-serif;
-  margin: 0rem 12vw;
-  padding-bottom: 1vh;
+  border-radius: 1.5rem;
+  /* margin: 0rem 12vw; */
+  padding-bottom: 1rem;
+  /*
   background-color: var(--color-accent-1);
+*/
+  background: linear-gradient(200deg, var(--color-accent-1) 0%, rgba(148, 233, 163, 1) 100%);
+  max-width: 400px;
 
   filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.1));
+  margin: auto;
 }
 
 .balance {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2vh 4vw;
+  padding: 3rem 2rem;
 }
 
 .currentBalance {
   font-size: 4rem;
   color: var(--color-bg-white);
   margin-top: 0.2vh;
+  font-weight: 600;
 }
 
 form {
@@ -38,7 +43,7 @@ form input {
 form span {
   margin-left: 0.4rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .creditCard-type img {
@@ -50,7 +55,7 @@ form span {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 1vh 2vw;
+  padding: 1rem 2rem;
   background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
 }

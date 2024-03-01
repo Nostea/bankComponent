@@ -6,10 +6,9 @@ const Home = () => {
   return (
     <div>
       <Header headerText="your funds" />
-
-      <section className="banking-section">
+      <main>
         <Bank />
-      </section>
+      </main>
     </div>
   );
 };
