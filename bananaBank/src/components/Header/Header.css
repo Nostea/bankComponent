@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  fill: var(--color-dark);
+}
+
+header {
+  margin: 2vh 4vw;
+}
+
+nav span {
+  color: var(--color-dark);
+}

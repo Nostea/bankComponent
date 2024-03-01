@@ -6,14 +6,20 @@ const Bank = () => {
   const [withdrawAmount, setWithdrawAmount] = useState("");
 
   return (
-    <section>
-      <div className="konto">
-        <h2>Mein Girokonto</h2>
-        <div className="saldo">
-          <span className="geldKonto">{cash}</span>
+    <section className="bank-section">
+      <div className="creditCard">
+        <div className="creditCard-type">
+          <img src="../public/img/Deutsche_Bank_logo.svg" />
+          <p>Debit Card xxxx-xxxx</p>
         </div>
+        <div className="balance">
+          <span>Your Balance</span>
+          <span className="currentBalance">{cash}</span>
+        </div>
+      </div>
 
-        <form action="">
+      <form action="">
+        <div>
           <input
             type="number"
             name="inputGeld"
@@ -22,16 +28,18 @@ const Bank = () => {
             placeholder="Betrag in Euro"
             value={withdrawAmount}
           />
-          <div className="flex-buttons">
-            <button type="button" onClick={() => setCash(cash + withdrawAmount)}>
-              Einzahlen
-            </button>
-            <button type="button" onClick={() => setCash(cash - withdrawAmount)}>
-              Auszahlen
-            </button>
-          </div>
-        </form>
-      </div>
+          <span>€</span>
+        </div>
+
+        <div className="flex-buttons">
+          <button type="button" onClick={() => setCash(cash + withdrawAmount)}>
+            Deposit
+          </button>
+          <button type="button" onClick={() => setCash(cash - withdrawAmount)}>
+            Withdraw
+          </button>
+        </div>
+      </form>
     </section>
   );
 };

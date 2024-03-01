@@ -1,12 +1,16 @@
 import "./Home.css";
 import Bank from "../../components/Bank/Bank";
+import Header from "../../components/Header/Header";
 
 const Home = () => {
   return (
-    <body>
-      <h1>Banana Bank</h1>
-      <Bank />
-    </body>
+    <div>
+      <Header headerText="your funds" />
+
+      <section className="banking-section">
+        <Bank />
+      </section>
+    </div>
   );
 };
 

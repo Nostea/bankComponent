@@ -1,7 +1,19 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-weight: 400;
+
+  --font-size-regular: 1.6rem;
+
+  --color-font: #232735;
+  --color-darkest: #1d212f;
+  --color-dark: #232735;
+  --color-bg-gray: #f2f2f2;
+  --color-darker-grey: #838383;
+  --color-bg-white: #ffffff;
+  --color-accent-1: #56b777;
+  --color-accent-2: #f3e565;
+  --color-error-1: #e51c50;
+  --color-error-2: #dd9509;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -9,15 +21,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  font-family: "Ruluko", sans-serif;
-  margin: 0px auto;
-  text-align: center;
-  width: 700px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  margin: 50px 0px;
+html {
+  font-size: 62.5%;
+}
+
+span {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--color-dark);
+}
+
+p {
+  color: var(--color-dark);
+  font-size: var(--font-size-regular);
 }
 
 form {
@@ -25,56 +47,6 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#logoImg {
-  width: 100px;
-  height: 100px;
-}
-
-#title {
-  color: #fbec5d;
-  background-color: #fffbc9;
-  border-radius: 5px;
-  font-family: "Oleo Script", cursive;
-  font-size: 50px;
-  margin: 0;
-}
-
-.konto {
-  color: #6b3e26;
-  background-color: #fffbc9;
-  border: 1px solid #fbec5d;
-  border-radius: 15px;
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  width: 300px;
-}
-
-.saldo {
-  background-color: #fbec5d;
-  color: #ffffff;
-  border: 1px solid #fbec5d;
-  border-radius: 15px;
-  font-family: "Ruluko", sans-serif;
-  font-size: 50px;
-  margin: 5px;
-  padding: 25px 0px;
-}
-.geldbetrag {
-  margin: 0 0.25rem;
-  min-width: 125px;
-  border: 1px solid #eee;
-  border-radius: 5px;
-  transition: border-color 0.5s ease-out;
-}
-.auszahlen,
-.einzahlen {
-  margin: 5px;
-  background-color: #fbec5d;
-  color: #6b3e26;
-  border-radius: 5px;
 }
 
 a {
@@ -87,20 +59,29 @@ a:hover {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 
+input {
+  padding: 0.6rem;
+  margin-bottom: 2rem;
+  width: 10rem;
+  display: inline;
+  font-size: var(--font-size-regular);
+}
+
 button {
-  border-radius: 8px;
-  border: 1px solid rgb(224, 174, 49);
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  border-radius: 0.4rem;
+  border: 1px solid var(--color-accent-1);
+  padding: 0.6rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
   font-family: inherit;
   background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin: 0rem 1rem;
 }
 button:hover {
   border-color: #646cff;
