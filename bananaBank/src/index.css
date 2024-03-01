@@ -1,0 +1,111 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Ruluko", sans-serif;
+  margin: 0px auto;
+  text-align: center;
+  width: 700px;
+}
+
+header {
+  margin: 50px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#logoImg {
+  width: 100px;
+  height: 100px;
+}
+
+#title {
+  color: #fbec5d;
+  background-color: #fffbc9;
+  border-radius: 5px;
+  font-family: "Oleo Script", cursive;
+  font-size: 50px;
+  margin: 0;
+}
+
+.konto {
+  color: #6b3e26;
+  background-color: #fffbc9;
+  border: 1px solid #fbec5d;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.saldo {
+  background-color: #fbec5d;
+  color: #ffffff;
+  border: 1px solid #fbec5d;
+  border-radius: 15px;
+  font-family: "Ruluko", sans-serif;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px 0px;
+}
+.geldbetrag {
+  margin: 0 0.25rem;
+  min-width: 125px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  transition: border-color 0.5s ease-out;
+}
+.auszahlen,
+.einzahlen {
+  margin: 5px;
+  background-color: #fbec5d;
+  color: #6b3e26;
+  border-radius: 5px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid rgb(224, 174, 49);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
